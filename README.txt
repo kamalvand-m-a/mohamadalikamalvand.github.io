@@ -35,4 +35,3 @@ git push -u origin main
 
 اتصال دامنه اختصاصی:
 - دامنه را بخرید و رکورد DNS را طبق راهنمای GitHub Pages تنظیم کنید. سپس نام دامنه را در تنظیمات مخزن → Pages → Custom domain وارد کنید.
-<meta name="google-site-verification" content="v_1_LSr-qY152ftt7g7TF-mKIgLuIPI_Or6TcCsYJ9A" />
