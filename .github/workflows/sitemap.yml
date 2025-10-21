@@ -1,0 +1,27 @@
+name: Generate Sitemap
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  generate-sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # برای lastmod دقیق
+
+      - name: Generate sitemap
+        uses: cicirello/generate-sitemap@v1
+        with:
+          base-url: https://mohamadalikamalvand.github.io
+          drop-html-extension: true  # بدون .html در URLها
+
+      - name: Commit sitemap
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add sitemap.xml
+          git commit -m "Update sitemap [skip ci]" || echo "No changes"
+          git push
