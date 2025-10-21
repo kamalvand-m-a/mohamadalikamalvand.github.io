@@ -1,14 +1,3 @@
 User-agent: *
 Allow: /
-
-# اجازه crawl به صفحات اصلی
-Allow: /index.html
-Allow: /articles/
-Allow: /*.pdf
-
-# بلاک صفحات غیرمهم (اگر دارید)
-Disallow: /admin/
-Disallow: /private/
-
-# معرفی sitemap برای ایندکس سریع
 Sitemap: https://mohamadalikamalvand.github.io/sitemap.xml
