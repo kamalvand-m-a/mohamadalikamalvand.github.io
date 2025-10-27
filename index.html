@@ -3,93 +3,673 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="محمد علی کمالوند - مشاور انبارداری و زنجیره تامین: مقالات هوش مصنوعی، بهینه‌سازی و لجستیک">
-    <title>محمد علی کمالوند — مشاور انبارداری</title>
+    <meta name="description" content="محمد علی کمالوند - مشاور انبارداری و زنجیره تامین. بهینه‌سازی، ایمنی و فناوری در مدیریت انبار">
+    <meta name="keywords" content="مشاور انبارداری, زنجیره تامین, بهینه‌سازی انبار, هوش مصنوعی در انبارداری, لجستیک, محمد علی کمالوند">
+    <meta name="author" content="محمد علی کمالوند">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://md-ali.github.io/Mohamad-Ali-Kamalvand/">
+    <meta property="og:title" content="محمد علی کمالوند | مشاور انبارداری و زنجیره تامین">
+    <meta property="og:description" content="مدیریت هوشمند انبار و بهینه‌سازی زنجیره تامین">
+    <meta property="og:image" content="https://https://md-ali.github.io/Mohamad-Ali-Kamalvand/profile.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://https://md-ali.github.io/Mohamad-Ali-Kamalvand/">
+    <meta property="twitter:title" content="محمد علی کمالوند | مشاور انبارداری و زنجیره تامین">
+    <meta property="twitter:description" content="مدیریت هوشمند انبار و بهینه‌سازی زنجیره تامین">
+    <meta property="twitter:image" content="https://https://md-ali.github.io/Mohamad-Ali-Kamalvand/profile.jpg">
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "محمد علی کمالوند",
+      "url": "https://https://md-ali.github.io/Mohamad-Ali-Kamalvand/",
+      "image": "https://md-ali.github.io/Mohamad-Ali-Kamalvand/profile.jpg",
+      "jobTitle": "مشاور انبارداری و زنجیره تامین",
+      "description": "مدیریت هوشمند انبار و بهینه‌سازی زنجیره تامین",
+      "email": "mohamadalikamalvand@gmail.com",
+      "telephone": "+989196257377"
+    }
+    </script>
+
+    <title>محمد علی کمالوند | مشاور انبارداری و زنجیره تامین</title>
+
     <style>
-        *{margin:0;padding:0;box-sizing:border-box;}
-        body{font-family:Tahoma,sans-serif;direction:rtl;text-align:right;max-width:900px;margin:0 auto;padding:20px;background:#f5f5f5;line-height:1.6;}
-        header{background:linear-gradient(135deg,#007bff,#0056b3);color:white;padding:30px;border-radius:10px;text-align:center;margin-bottom:20px;}
-        .profile-img{width:120px;height:120px;border-radius:50%;border:4px solid white;margin:0 auto 15px;display:block;}
-        h1{font-size:2.2em;margin-bottom:5px;}
-        h2{font-size:1.4em;margin-bottom:15px;color:#e9ecef;}
-        .section{background:white;padding:25px;border-radius:8px;margin:20px 0;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
-        .article{border-bottom:1px solid #eee;padding:15px 0;}
-        .article:last-child{border-bottom:none;}
-        .article h3 a{color:#007bff;text-decoration:none;font-size:1.1em;}
-        .article-meta{font-size:0.9em;color:#666;margin-top:5px;}
-        .tags{background:#e7f3ff;padding:4px 8px;border-radius:12px;font-size:0.8em;color:#007bff;}
-        .loading{text-align:center;color:#666;padding:20px;}
-        .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;}
-        .contact-item{background:#f8f9fa;padding:15px;border-radius:5px;border-right:3px solid #007bff;}
-        footer{text-align:center;padding:15px;color:#666;border-top:1px solid #ddd;margin-top:20px;}
-        @media(max-width:768px){body{padding:10px;}.profile-img{width:100px;height:100px;}}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #1a472a;
+            --secondary-color: #2ecc71;
+            --accent-color: #f39c12;
+            --dark-bg: #0f1419;
+            --card-bg: #1a1f2e;
+            --text-primary: #ffffff;
+            --text-secondary: #a8b2d1;
+            --border-color: #2d3748;
+        }
+
+        body {
+            font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%);
+            color: var(--text-primary);
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
+        /* Header & Navigation */
+        header {
+            background: rgba(15, 20, 25, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--primary-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo img {
+            width: 70px;
+            height: 70px;
+            border-radius: 70%;
+            border: 3px solid var(--secondary-color);
+            object-fit: cover;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+            background: rgba(46, 204, 113, 0.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 2;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(46, 204, 113, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        /* Sections */
+        section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+            border-radius: 2px;
+        }
+
+        /* Expertise Cards */
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .expertise-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .expertise-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+        }
+
+        .expertise-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(46, 204, 113, 0.2);
+            border-color: var(--secondary-color);
+        }
+
+        .expertise-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .expertise-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* Showcase Gallery */
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .showcase-item {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .showcase-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 50px rgba(46, 204, 113, 0.3);
+        }
+
+        .showcase-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .showcase-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            padding: 2rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .showcase-item:hover .showcase-overlay {
+            transform: translateY(0);
+        }
+
+        .showcase-overlay h3 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .showcase-overlay p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Articles Grid */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .article-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(243, 156, 18, 0.2);
+            border-color: var(--accent-color);
+        }
+
+        .article-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .article-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .article-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .article-link:hover {
+            gap: 1rem;
+            color: var(--accent-color);
+        }
+
+        /* About Section */
+        .about-content {
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            line-height: 2;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-item {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--secondary-color);
+            box-shadow: 0 10px 30px rgba(46, 204, 113, 0.2);
+        }
+
+        .contact-item i {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .contact-item h3 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-bg);
+            padding: 2rem;
+            text-align: center;
+            border-top: 2px solid var(--primary-color);
+            margin-top: 5rem;
+        }
+
+        footer p {
+            color: var(--text-secondary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .expertise-grid,
+            .showcase-grid,
+            .articles-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-content,
+        .expertise-card,
+        .showcase-item,
+        .article-card,
+        .about-content,
+        .contact-item {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .expertise-card:nth-child(1) { animation-delay: 0.1s; }
+        .expertise-card:nth-child(2) { animation-delay: 0.2s; }
+        .expertise-card:nth-child(3) { animation-delay: 0.3s; }
+        .expertise-card:nth-child(4) { animation-delay: 0.4s; }
+        .expertise-card:nth-child(5) { animation-delay: 0.5s; }
+        .expertise-card:nth-child(6) { animation-delay: 0.6s; }
     </style>
 </head>
 <body>
-    <!-- هدر -->
     <header>
-        <img src="https://via.placeholder.com/120x120/007bff/ffffff?text=MAK" alt="محمد علی کمالوند" class="profile-img">
-        <h1>محمد علی کمالوند</h1>
-        <h2>مشاور انبارداری و زنجیره تامین</h2>
+        <nav>
+            <div class="logo">
+                <img src="profile.jpg" alt="محمد علی کمالوند">
+                <h1>محمد علی کمالوند</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#expertise">تخصص‌ها</a></li>
+                <li><a href="#showcase">نمونه‌کارها</a></li>
+                <li><a href="#articles">مقالات</a></li>
+                <li><a href="#about">درباره</a></li>
+                <li><a href="#contact">تماس</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- معرفی -->
-    <div class="section">
-        <h2>🤖 مدیریت هوشمند انبار و بهینه‌سازی زنجیره تامین</h2>
-        <p>من، <strong>محمد علی کمالوند</strong>، با <strong>تجربه علمی و عملی</strong> در بهبود عملیات انبار و پیاده‌سازی <strong>هوش مصنوعی</strong> برای افزایش <strong>ایمنی و کارایی</strong>، <strong>مقالات قابل اجرا</strong> برای <strong>مدیران لجستیک</strong> منتشر می‌کنم.</p>
-    </div>
-
-    <!-- مقالات -->
-    <div class="section">
-        <h2>📚 مقالات علمی و عملی</h2>
-        <div id="articles" class="loading">در حال بارگذاری...</div>
-    </div>
-
-    <!-- تماس -->
-    <div class="section">
-        <h2>📞 تماس با من</h2>
-        <div class="contact-grid">
-            <div class="contact-item">
-                <strong>📱 تلفن</strong><br>
-                <a href="tel:+989196257377">+98 919 625 7377</a>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>مدیریت هوشمند انبار و بهینه‌سازی زنجیره تامین</h2>
+                <p>
+                    من، <strong>محمد علی کمالوند</strong>، تجربهٔ علمی و عملی در بهبود عملیات انبار و پیاده‌سازی راهکارهای هوش مصنوعی برای افزایش ایمنی و کارایی دارم. اینجا مقالات علمی و عملی و قابل اجرا برای مدیران و مهندسان لجستیک منتشر می‌شود.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#articles" class="btn btn-primary">مطالعه مقالات</a>
+                    <a href="#contact" class="btn btn-secondary">تماس با من</a>
+                </div>
             </div>
-            <div class="contact-item">
-                <strong>✉️ ایمیل</strong><br>
-                <a href="mailto:mohamadalikamalvand@gmail.com">mohamadalikamalvand@gmail.com</a>
-            </div>
-            <div class="contact-item">
-                <strong>💼 مشاوره</strong><br>
-                <a href="mailto:mohamadalikamalvand@gmail.com?subject=درخواست مشاوره">درخواست مشاوره</a>
-            </div>
-        </div>
-    </div>
+        </section>
 
-    <footer>&copy; ۱۴۰۴ محمد علی کمالوند | تمامی حقوق محفوظ است</footer>
+        <section id="expertise">
+            <h2 class="section-title">حوزه‌های تخصصی</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <h3>🏭  بهینه‌سازی چیدمان انبار مواد شیمیایی</h3>
+                    <p>طراحی و پیاده‌سازی سیستم‌های چیدمان هوشمند با استفاده از الگوریتم‌های K-Means+GA  جهت ایمنی و جلوگیری از واکنش بین مواد شیمیایی و افزایش بهره‌وری</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>🤖 هوش مصنوعی در انبارداری</h3>
+                    <p>توسعه سیستم‌های یادگیری عمیق برای پیش‌بینی تقاضا، مسیریابی خودکار AGV، و تشخیص الگوهای ناکارآمد در عملیات انبار</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>📊 تحلیل داده و گراف</h3>
+                    <p>کاربرد تئوری گراف و الگوریتم‌های بهینه‌سازی در مسیریابی، مدیریت شبکه توزیع و تحلیل جریان مواد در زنجیره تامین</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>🔒 ایمنی و ردیابی</h3>
+                    <p>طراحی سیستم‌های ردیابی ، مدیریت پلمپ محموله‌های حساس و ایجاد پروتکل‌های امنیتی برای جلوگیری از اشتباهات انسانی</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>🚚 مدیریت زنجیره تامین</h3>
+                    <p>بهینه‌سازی فرآیندهای دریافت، ذخیره‌سازی و ارسال با استفاده از روش‌های Order Batching و Linear Programming</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>💡 مشاوره و آموزش</h3>
+                    <p>ارائه راهکارهای عملی، انتقال دانش فنی و آموزش تیم‌های عملیاتی برای استقرار فناوری‌های نوین در محیط‌های صنعتی</p>
+                </div>
+            </div>
+        </section>
 
-    <script>
-    // مقالات استاتیک (تا JSON درست بشه)
-    document.getElementById('articles').innerHTML = `
-        <div class="article">
-            <h3><a href="https://kamalvandm110-bit.github.io/mak-1404-07-20/chidamane.pdf" target="_blank">چیدمان انبارهای مواد شیمیایی با هوش مصنوعی</a></h3>
-            <p>بهینه‌سازی چیدمان با الگوریتم‌های AI و استانداردهای ایمنی</p>
-            <div class="article-meta">📅 ۱۴۰۴/۰۵/۰۹ | <span class="tags">انبارداری • AI • ایمنی</span></div>
-        </div>
-        <div class="article">
-            <h3><a href="https://kamalvandm110-bit.github.io/mak-1404-07-20/graph.pdf" target="_blank">انواع گراف و کاربرد در هوش مصنوعی</a></h3>
-            <p>معمای کونیگسبرگ و بهینه‌سازی مسیرهای لجستیک</p>
-            <div class="article-meta">📅 ۱۴۰۴/۰۷/۲۰ | <span class="tags">گراف • لجستیک • AI</span></div>
-        </div>
-        <div class="article">
-            <h3><a href="https://kamalvandm110-bit.github.io/mak-1404-07-20/strategy.pdf" target="_blank">استراتژی بازطراحی زنجیره تامین</a></h3>
-            <p>مدل‌های مدرن و نقش انبار هوشمند</p>
-            <div class="article-meta">📅 ۱۴۰۴/۰۷/۲۰ | <span class="tags">زنجیره تامین • استراتژی</span></div>
-        </div>
-        <div class="article">
-            <h3><a href="https://kamalvandm110-bit.github.io/mak-1404-07-20/tracking.pdf" target="_blank">ردیابی با ربات تلگرام</a></h3>
-            <p>نظارت آنی محموله‌ها و تجهیزات انبار</p>
-            <div class="article-meta">📅 ۱۴۰۴/۰۷/۲۰ | <span class="tags">ردیابی • ربات • لجستیک</span></div>
-        </div>
-    `;
-    </script>
+        <section id="showcase">
+            <h2 class="section-title">نمونه‌کارها و پروژه‌ها</h2>
+            <div class="showcase-grid">
+                <div class="showcase-item">
+                    <img src="warehouse.png" alt="پروژه انبار هوشمند">
+                    <div class="showcase-overlay">
+                        <h3>انبار هوشمند</h3>
+                        <p>پیاده‌سازی سیستم مدیریت انبار با کاربرد هوش مصنوعی</p>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <img src="warehouse-conveyor.jpg" alt="سیستم نوار نقاله">
+                    <div class="showcase-overlay">
+                        <h3>سیستم نوار نقاله</h3>
+                        <p>بهینه‌سازی مسیر حرکت مواد در خطوط تولید</p>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <img src="warehouse-3d-model.JPG" alt="مدل‌سازی سه‌بعدی">
+                    <div class="showcase-overlay">
+                        <h3>مدل‌سازی سه‌بعدی</h3>
+                        <p>شبیه‌سازی و بهینه‌سازی طراحی فضای انبار</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="articles">
+            <h2 class="section-title">مقالات و تحقیقات</h2>
+            <div class="articles-grid">
+                 <div class="article-card">
+                    <h3>بهینه سازی چیدمان انبار مواد شیمیایی با استفاده از هوش مصنوعی و با رویکردی نوین </h3>
+                    <p></p>این مقاله یک روش نو آورانه برای بهینه سازی چیدمان انبارهای شیمیایی با AI را ارائه داد که ایمنی در انبار ها را اولویت میبخشد. </p>
+                    <a href="chidamane.pdf" class="article-link" target="_blank">
+                        مطالعه مقاله ←
+                      </a>
+                 </div>    
+                <div class="article-card">
+                    <h3>کاربرد گراف در هوش مصنوعی</h3>
+                    <p>بررسی انواع گراف و کاربردهای آن در سیستم‌های هوشمند، مسیریابی و تحلیل شبکه‌های پیچیده زنجیره تامین</p>
+                    <a href="graph.pdf" class="article-link" target="_blank">
+                        مطالعه مقاله ←
+                    </a>
+                </div>
+                <div class="article-card">
+                    <h3>سیستم ردیابی و مدیریت تحویل</h3>
+                    <p>طراحی ربات تلگرام برای ثبت خودکار تحویل و مدیریت ردیابی لحظه‌ای محموله‌ها  </p>
+                    <a href="tracking.pdf" class="article-link" target="_blank">
+                        مطالعه مقاله ←
+                    </a>
+                </div>
+                <div class="article-card">
+                    <h3>استراتژی مدیریت زنجیره </h3>
+                    <p>اهمیت استراتژی مدیریت زنجیره تامین و نقش انبار در این استراتژی  </p>
+                    <a href="strategy.pdf" class="article-link" target="_blank">
+                        مطالعه مقاله ←
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">درباره من</h2>
+            <div class="about-content">
+                <p>
+                    من <strong>محمد علی کمالوند</strong> هستم، مهندس و مشاور حوزه انبارداری و زنجیره تامین. تمرکز اصلی من بر پیاده‌سازی فناوری‌های هوش مصنوعی، یادگیری ماشین و تحلیل داده برای حل مسائل واقعی صنعت لجستیک است.
+                </p>
+                <p>
+                    در طول فعالیت حرفه‌ای خود، پروژه‌های متعددی در زمینه بهینه‌سازی فرآیندهای انبار، طراحی سیستم‌های ردیابی هوشمند و توسعه الگوریتم‌های مسیریابی انجام داده‌ام. هدف من کمک به سازمان‌ها برای دستیابی به حداکثر کارایی، کاهش هزینه‌ها و افزایش ایمنی در عملیات روزانه است.
+                </p>
+                <p>
+                    مقالات و محتوای این وب‌سایت حاصل تجربیات علمی و عملی، مطالعات آکادمیک و پروژه‌های اجرایی من است که امیدوارم برای مدیران، مهندسان و علاقه‌مندان حوزه لجستیک مفید واقع شود.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">تماس با من</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i>📞</i>
+                    <h3>تلفن</h3>
+                    <a href="tel:+989196257377">۰۹۱۹۶۲۵۷۳۷۷</a>
+                </div>
+                <div class="contact-item">
+                    <i>📧</i>
+                    <h3>ایمیل</h3>
+                    <a href="mailto:mohamadalikamalvand@gmail.com">mohamadalikamalvand@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i>💬</i>
+                    <h3>تلگرام</h3>
+                    <a href="https://t.Malikamalnand" target="_blank">@Malikamalvand</a>
+                </div>
+                <div class="contact-item">
+                    <i>💻</i>
+                    <h3>گیت‌هاب</h3>
+                    <a href="https://md-ali.github.io/Mohamad-Ali-Kamalvand/" target="_blank">https://md-ali/Mohamad-Ali-Kamalvand/</a>
+                </div>
+                 <div class="contact-item">
+                    <i>💻</i>
+                    <h3></h3>لینکدین</h3>
+                    <a href="https://linkedin.com/in/mohamadali-kamalvand-95a469347" target="_blank">Mohamad-Ali-Kamalvand95a469347</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© ۱۴۰۴ — محمد علی کمالوند. همه حقوق محفوظ است.</p>
+    </footer>
 </body>
 </html>
